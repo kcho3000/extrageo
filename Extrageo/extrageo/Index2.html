@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC</title>
+    <link rel="shortcut icon" href="Logo.png">
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        #btnReg ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        #btnReg ul li {
+            display: inline-block;
+        }
+
+        #btnReg ul li a {
+            color: #BF00B9;
+            display: block;
+            padding: 10px 25px;
+            text-decoration: none;
+        }
+
+        #btnReg ul li a:hover {
+            background-color: #F8C3F6;
+            border-radius: 12.5%;
+        }
+        #btnCS{
+    background-color: #BF00B9;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    border: 2px solid rgb(172, 72, 167);
+}
+
+    </style>
+</head>
+
+<body style="background-color: #F8C3F6">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="height: 80px; background-color: #DE95DC ;">
+        <div class="container-fluid">
+
+            <img id="imglogo" style="width: 10%; min-width: 80px;  " src="Logo.png">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div>
+                    <ul style="list-style: none; margin: 0;">
+                        <li style="display: inline-block;"><a
+                                style="color:#BF00B9; display: block; text-decoration: none;">
+                                <h2>KFC Zamora</h2>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <center style="margin-top: 1%;">
+        <h1 class="ml1f">
+            <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters">INICIO DE SESIÓN</span>
+                <span class="line line2"></span>
+            </span>
+        </h1>
+
+       
+        <form id="ingresar">
+            <div class="mb-3">
+                <label for="exampleInputEmail1"
+                    style='font-family: "Gill Sans Extrabold", Helvetica, sans-serif; font-size: 30px;'
+                    class="form-label">Correo electronico</label>
+                <input type="email" required style="width: 40%; " class="form-control" id="email"
+                    aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1"
+                    style='font-family: "Gill Sans Extrabold", Helvetica, sans-serif; font-size: 30px;'
+                    class="form-label">Contraseña</label>
+                <input type="password" required style="width: 40%; " class="form-control" id="password">
+            </div>
+            <div>
+                <button id="btnCS" style="margin-top: 10px; margin-bottom: 10px;" class="btn btn-primary">iniciar Sesion</button>
+            </div>
+        </form>
+        <div id="btnReg">
+            <ul>
+                <center>
+                    <li><a href="Registrar.html">
+                            <h2>Registrar nuevo Usuario</h2>
+                        </a></li>
+                </center>
+
+            </ul>
+        </div>
+    </center>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCAasdjhqSMYgbTH-JFQBp0co9uMgoJUCw",
+            authDomain: "autorizacion-f019c.firebaseapp.com",
+            projectId: "autorizacion-f019c",
+            storageBucket: "autorizacion-f019c.appspot.com",
+            messagingSenderId: "311970857083",
+            appId: "1:311970857083:web:3ba07de7aa41d423c822de"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+    </script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> 
+    <script src="autorizacion.js"></script>
+    <script src="index2.js"></script>
+</body>
+
+</html>
