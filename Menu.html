@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="shortcut icon" href="Logo.png">
+  <title>KFC</title>
+  <style>
+    #barra ul {
+      list-style: none;
+      margin: 0;
+    }
+
+    #barra ul li {
+      display: inline-block;
+    }
+
+    #barra ul li a {
+      color: #BF00B9;
+      display: block;
+      padding: 20px 50px;
+      text-decoration: none;
+    }
+
+    #barra ul li a:hover {
+      background-color: #F8C3F6;
+      border-radius: 12.5%;
+    }
+
+    #barra ul li a h2 {
+      color: #FF00F7;
+    }
+
+    #imglogo {
+      width: 8%;
+      min-width: 80px;
+      border-radius: 50%;
+    }
+
+    #imgmenu {
+      margin-top: 10%;
+      width: 100%;
+    }
+    #btnCS{
+    background-color: #BF00B9;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    border: 2px solid rgb(172, 72, 167);
+}
+#btnCS:hover{
+    background-color: #F8C3F6; /* Green */
+    color: rgb(172, 72, 167);
+}
+  </style>
+
+</head>
+
+<body style="background-color: #F8C3F6">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #DE95DC ;">
+    <div class="container-fluid">
+
+      <img id="imglogo" src="Logo.png">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div id="barra">
+          <ul>
+            <li><a href="Index.html"><h2>Inicio</h2></a></li>
+            <li><a href="Menu.html"><h2>Menu</h2></a></li>
+            <li><a href="Ubicaciones.html"><h2>Ubicaciones</h2></a></li>
+            <li><a href="Promociones.html"><h2>Promociones</h2></a></li>
+            <li><a href="Index2.html"><h2>Cerrar Sesion</h2></a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row text-center" id="menu">
+      <div class="col-12 col-md-4">
+        <img id="imgmenu" src="cubeta.jpg">
+        <p>Cubeta de pollo</p>
+        <p>$199</p>
+      </div>
+      <div class="col-12 col-md-4">
+        <img id="imgmenu" src="ktira.jpg">
+        <p>Ktiras</p>
+        <p>$99</p>
+      </div>
+      <div class="col-12 col-md-4">
+        <img id="imgmenu" src="hamburguesa.jpg">
+        <p>Hamburguesa de pollo</p>
+        <p>$128</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="autorizacion.js"></script>
+  <script src="index2.js"></script>
+</body>
+
+</html>
